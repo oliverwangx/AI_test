@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+     
+     <link href='/static/css/style.css' rel="stylesheet">
+    </head>
+    <body>
+        <title>Search for this</title>
+        <div class = "grid-container">
+            {% for url in urls %}
+                <div class="grid-item">
+                    <a href = "{{ url_for('text', link = loop.index - 1 ) }}">
+                    <img src={{ url }}  height="450" width="470">
+                    </a>
+                </div> 
+            {% endfor %}
+        </div>
+    </body>
+</html>

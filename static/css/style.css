@@ -1,0 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: auto auto auto auto;
+   
+  }
+  .grid-item {
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item:hover{
+    opacity: 0.5;
+    background-color: rgba(15, 14, 14, 0.5);
+    color:black;
+  }
