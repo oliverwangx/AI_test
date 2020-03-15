@@ -46,7 +46,7 @@ def hello(keyword=None):
 @app.route('/picturestext/<link>', methods=['GET', 'POST'])
 def text(link):
     url = session['urls'][int(link)]
-    dict = {"up": 0, "middle": 40, "bottom": 80}
+    dict = {"up": -10, "middle": 40, "bottom": 95}
     if request.method == 'POST':
         text = request.form.get('Text')
         position = request.form.get('Select')

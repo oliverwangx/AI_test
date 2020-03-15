@@ -3,12 +3,14 @@
     <head>  
         <meta charset="utf-8">
     </head>
+    <script src = "/static/js/position.js"></script>
     <style>
     .box{
         position: relative;
         display: inline-block; /* Make the width of box same as image */
-        left: 50%;
-        top: 50%;
+        left: 30%;
+        top: 80%;
+        padding: 10px;
     }
     .box .text{
         position: absolute;
@@ -26,11 +28,19 @@
     }
     </style>
     <body>
+        <h2> Meme Generator</h1>
+        <button onclick=" up() " type="button" >Up</button>
+	    <button onclick="bottom()" type="button" >middle</button><br>
+	    <button onclick="middle()" type="button">bottom</button>
         <div class="box">
             <img src = {{ url }} height="450" width="470">
-        <div class="text">
-            <h1> text </h1>
+        <div class="text" id = "p1">
+            <h1> {{ text }} </h1>
         <div class="text">
         </div>
+
+
+    
     </body>
+    
 </html>
